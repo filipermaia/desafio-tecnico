@@ -317,6 +317,7 @@ terraform.tfvars
 *.tfstate.*
 .terraform/
 .terraform.lock.hcl
+```
 
 ## 📚 Referência Técnica
 
