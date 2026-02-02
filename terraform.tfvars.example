@@ -1,0 +1,15 @@
+# Exemplo de configuração - Copie para terraform.tfvars e ajuste os valores
+# NUNCA commite o arquivo terraform.tfvars com credenciais reais!
+
+# Credenciais do banco de dados PostgreSQL
+db_user = "admin"
+db_pass = "sua_senha_segura_aqui"  # Altere esta senha!
+db_name = "desafio"
+
+# Senha do usuário admin da aplicação
+admin_password = "sua_senha_segura_aqui"  # Altere esta senha!
+
+# Configurações de rede (geralmente não precisa alterar)
+db_host = "postgres"
+db_port = 5432
+back_port = 3000
