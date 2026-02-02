@@ -6,6 +6,7 @@ Infraestrutura como código para ambiente containerizado seguro com redes isolad
 
 - [Arquitetura](#-arquitetura)
 - [Pré-requisitos](#-pré-requisitos)
+- [Como Obter o Projeto](#-como-obter-o-projeto)
 - [Configuração](#-configuração)
 - [Como Executar](#-como-executar)
 - [Testes](#-testes)
@@ -82,11 +83,36 @@ Após a instalação, verifique:
 terraform version
 ```
 
+## 📦 Como Obter o Projeto
+
+### Opção 1: Clonar o repositório (recomendado)
+
+```bash
+git clone https://github.com/filipermaia/desafio-tecnico.git
+cd desafio-tecnico
+```
+
+### Opção 2: Baixar a release
+
+1. Acesse a página de releases: https://github.com/filipermaia/desafio-tecnico/releases
+2. Baixe a versão mais recente (arquivo `.zip` ou `.tar.gz`)
+3. Extraia o arquivo:
+
+```bash
+# Para .zip
+unzip desafio-tecnico-vX.X.X.zip
+cd desafio-tecnico
+
+# Para .tar.gz
+tar -xzf desafio-tecnico-vX.X.X.tar.gz
+cd desafio-tecnico
+```
+
 ## ⚙️ Configuração
 
 ### 1. Criar arquivo de variáveis
 
-Crie um arquivo `terraform.tfvars` na raiz do projeto terraform com as seguintes configurações:
+Crie um arquivo `terraform.tfvars` na raiz do projeto com as seguintes configurações:
 
 ```hcl
 # terraform.tfvars - NUNCA commitar este arquivo!
@@ -112,7 +138,7 @@ back_port = 3000
 Verifique se você tem a seguinte estrutura:
 
 ```
-terraform/
+desafio-tecnico/
 ├── main.tf              # Provider Docker
 ├── variables.tf         # Definição de variáveis
 ├── terraform.tfvars     # ⚠️ Valores das variáveis (criar)
@@ -141,7 +167,7 @@ terraform/
 ### Passo 1: Inicializar o Terraform
 
 ```bash
-cd terraform
+cd desafio-tecnico
 terraform init
 ```
 
