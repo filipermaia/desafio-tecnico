@@ -282,21 +282,6 @@ curl http://localhost:3000
 # Apenas o proxy está exposto!
 ```
 
-## 📁 Estrutura do Projeto
-
-```
-.
-├── main.tf              # Configuração do provider
-├── variables.tf         # Definição de variáveis
-├── terraform.tfvars     # Valores das variáveis (não versionar!)
-├── outputs.tf           # Outputs informativos
-├── network.tf           # Redes Docker (external + internal)
-├── postgres.tf          # Container PostgreSQL + volume persistente
-├── backend.tf           # Container Backend Node.js + build da imagem
-├── frontend.tf          # Container Frontend Nginx  + build da imagem
-└── proxy.tf             # Container Nginx (proxy reverso)
-```
-
 ## 🧹 Limpeza
 
 ### Remover toda a infraestrutura
