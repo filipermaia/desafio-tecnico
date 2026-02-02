@@ -192,8 +192,6 @@ Após a aplicação bem-sucedida, você verá:
 ```
 Outputs:
 
-backend_internal = "http://backend:3000"
-postgres_container = "postgres"
 proxy_url = "http://localhost:8080"
 ```
 
@@ -236,8 +234,6 @@ Você deve ver a página HTML com:
   Migration runned
   ```
 
-> 💡 **Nota**: Via `curl` a resposta é em JSON: `{"database":true,"userAdmin":true}`
-
 ### Teste 4: Verificar logs
 
 ```bash
@@ -256,10 +252,6 @@ docker logs -f backend
 # Tentar acessar backend diretamente (deve falhar)
 curl http://localhost:3000
 # curl: (7) Failed to connect to localhost port 3000
-
-# Tentar acessar frontend diretamente (deve falhar)
-curl http://localhost:80
-# curl: (7) Failed to connect to localhost port 80
 
 # Apenas o proxy está exposto!
 ```
@@ -325,11 +317,6 @@ terraform.tfvars
 *.tfstate.*
 .terraform/
 .terraform.lock.hcl
-
-# Variáveis locais
-.env
-*.env
-```
 
 ## 📚 Referência Técnica
 
