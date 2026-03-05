@@ -6,7 +6,7 @@ resource "docker_container" "proxy" {
     external = 8080
   }
   volumes {
-    host_path      = abspath("${path.module}/proxy/nginx.conf")
+    host_path      = abspath("${path.root}/proxy/nginx.conf")
     container_path = "/etc/nginx/conf.d/default.conf"
     read_only      = true
   }

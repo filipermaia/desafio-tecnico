@@ -1,7 +1,7 @@
 resource "docker_image" "backend" {
   name = "backend:latest"
   build {
-    context = "${path.module}/backend"
+    context = "${path.root}/backend"
   }
   force_remove = true
 }
