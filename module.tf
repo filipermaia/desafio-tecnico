@@ -7,4 +7,5 @@ module "app" {
   db_user        = var.db_user
   db_pass        = var.db_pass
   admin_password = var.admin_password
+  back_port      = var.back_port
 }

@@ -38,6 +38,6 @@ variable "db_port" {
 
 variable "back_port" {
   type        = number
-  default     = 0
+  default     = 3000
   description = "Backend application port"
 }
