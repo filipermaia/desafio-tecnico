@@ -41,3 +41,15 @@ variable "back_port" {
   default     = 3000
   description = "Backend application port"
 }
+
+variable "back_path" {
+  type        = string
+  default     = ""
+  description = "Path to the backend application"
+}
+
+variable "front_path" {
+  type        = string
+  default     = ""
+  description = "Path to the frontend application"
+}

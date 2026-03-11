@@ -41,3 +41,15 @@ variable "admin_password" {
   sensitive   = true
   description = "Admin user password"
 }
+
+variable "back_path" {
+  type        = string
+  default     = ""
+  description = "Path to the backend application"
+}
+
+variable "front_path" {
+  type        = string
+  default     = ""
+  description = "Path to the frontend application"
+}

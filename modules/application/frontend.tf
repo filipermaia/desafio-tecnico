@@ -1,7 +1,7 @@
 resource "docker_image" "frontend" {
   name = "frontend:latest"
   build {
-    context = "${path.root}/frontend"
+    context = var.front_path
   }
   force_remove = true
 }

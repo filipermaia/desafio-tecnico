@@ -8,4 +8,6 @@ module "app" {
   db_pass        = var.db_pass
   admin_password = var.admin_password
   back_port      = var.back_port
+  back_path      = var.back_path
+  front_path     = var.front_path
 }
